@@ -100,13 +100,9 @@
 <form id="examRegistrationForm">
 
   <label for="fullName">Full Name:</label>
-  <input type="text" id="mihir" data-dynamic-attribute="isDisplayed" required>
+  <input type="text" id="name" data-dynamic-attribute="isDisplayed" required>
 
-  <label for="IdentificationNumber">Identification Number:</label>
-  <textarea name="smruti" data-dynamic-attribute="isDisplayed"></textarea>
-  
-
-<label for="educationLevel">Highest Education Level:</label>
+ <label for="educationLevel">Highest Education Level:</label>
     <select id="educationLevel" name="educationLevellist" onchange="handleEducationLevelChange(this.value)" data-dynamic-attribute="isDisabled" required>
     <option value="highSchool">High School</option>
     <option value="undergraduate">Undergraduate</option>
@@ -158,6 +154,9 @@
 
   <label for="cardNumber">Card Number:</label>
   <input type="text" id="cardNumber" name="cardNumber" maxlength="16">
+
+   <label for="IdentificationNumber">Identification Number:</label>
+  <textarea name="identification" data-dynamic-attribute="isDisplayed"></textarea>
 
 
   <!-- Additional form elements for demonstration 
